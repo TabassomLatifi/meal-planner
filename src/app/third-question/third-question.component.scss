@@ -1,0 +1,85 @@
+.main {
+  background-color: #66FE00;
+}
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 30vh;
+}
+.buttons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 32px;
+  background-color: white;
+  border-radius: 16px;
+  height: 100px;
+  width: 1180px;
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+button {
+  width: 400px;
+  height: 400px;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.healthy,
+.medium,
+.fatty {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+
+.healthy:hover, .medium:hover, .fatty:hover {
+  filter: sepia(0.4);
+}
+
+
+.healthy {
+  background-image: url("../../assets/grilled-chicken-3.jpg");
+
+}
+
+.medium {
+  background-image: url("../../assets/adas-polo-darbari\ \(1\).jpg");
+  background-size: cover;
+}
+
+.fatty {
+  background-image: url("../../assets/190524-classic-american-cheeseburger-ew-207p.jpg");
+  background-size: cover;
+}
+
+.healthy a,
+.medium a,
+.fatty a {
+  background-color: rgba(255, 255, 255, 0.75);
+  display: block;
+  width: 400px;
+  height: 120px;
+  font-size: 50px;
+  border-radius: 0px 0px 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}

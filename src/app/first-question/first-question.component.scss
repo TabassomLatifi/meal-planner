@@ -1,0 +1,85 @@
+.main {
+  background-color: #FF9300;
+}
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 30vh;
+}
+.buttons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 32px;
+  background-color: white;
+  border-radius: 16px;
+  height: 100px;
+  width: 1180px;
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+button {
+  width: 400px;
+  height: 400px;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.breakfast,
+.lunch,
+.dinner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+
+.breakfast:hover, .lunch:hover, .dinner:hover {
+  filter: sepia(0.4);
+}
+
+
+.breakfast {
+  background-image: url("../../assets/american-breakfast-500x500.jpg");
+
+}
+
+.lunch {
+  background-image: url("../../assets/زرشک-پلو-با-مرغ.jpg");
+  background-size: cover;
+}
+
+.dinner {
+  background-image: url("../../assets/464990_239.jpg");
+  background-size: cover;
+}
+
+.breakfast a,
+.lunch a,
+.dinner a {
+  background-color: rgba(255, 255, 255, 0.75);
+  display: block;
+  width: 400px;
+  height: 120px;
+  font-size: 50px;
+  border-radius: 0px 0px 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}

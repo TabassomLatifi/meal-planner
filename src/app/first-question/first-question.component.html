@@ -1,0 +1,31 @@
+<div class="main">
+  <div class="container">
+    <h1>صبحانه می‌خوای؟ ناهار یا شام؟</h1>
+  </div>
+  <div class="buttons">
+    <button
+      mat-button
+      class="dinner"
+      (click)="onClick3()"
+      routerLink="/secondquestion"
+    >
+      <a>شام</a>
+    </button>
+    <button
+      mat-button
+      class="lunch"
+      (click)="onClick2()"
+      routerLink="/secondquestion"
+    >
+      <a>ناهار</a>
+    </button>
+    <button
+      mat-button
+      class="breakfast"
+      (click)="onClick1()"
+      routerLink="/breakfastsecondquestion"
+    >
+      <a>صبحانه</a>
+    </button>
+  </div>
+</div>

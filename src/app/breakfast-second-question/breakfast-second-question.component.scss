@@ -1,0 +1,79 @@
+.main {
+    background-color: #00A8FF;
+  }
+  .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 30vh;
+  }
+  .buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    background-color: white;
+    border-radius: 16px;
+    height: 100px;
+    width: 1180px;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+  }
+  
+  button {
+    width: 400px;
+    height: 400px;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .protein,
+  .no-protein {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  
+  .protein:hover, .no-protein:hover {
+    filter: sepia(0.4);
+  }
+  
+  
+  .protein {
+    background-image: url("../../assets/american-breakfast-500x500.jpg");
+  
+  }
+  
+  .no-protein {
+    background-image: url("../../assets/e2d2a862-902b-4196-aa1d-6f8ee39ee661.jpeg");
+    background-size: cover;
+  }
+
+  .protein a,
+  .no-protein a {
+    background-color: rgba(255, 255, 255, 0.75);
+    display: block;
+    width: 400px;
+    height: 120px;
+    font-size: 50px;
+    border-radius: 0px 0px 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  

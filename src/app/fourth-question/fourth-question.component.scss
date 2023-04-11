@@ -1,0 +1,85 @@
+.main {
+  background-color: #fe0055;
+}
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 30vh;
+}
+.buttons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 32px;
+  background-color: white;
+  border-radius: 16px;
+  height: 100px;
+  width: 1180px;
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+button {
+  width: 400px;
+  height: 400px;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fast,
+.normal,
+.slow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.fast:hover,
+.normal:hover,
+.slow:hover {
+  filter: sepia(0.4);
+}
+
+.fast {
+  background-image: url("../../assets/fried-egg-decoration.jpg");
+  background-size: cover;
+}
+
+.normal {
+  background-image: url("../../assets/kotlet-abadani.jpg");
+  background-size: cover;
+}
+
+.slow {
+  background-image: url("../../assets/tah-chin-morog.jpg");
+  background-size: cover;
+}
+
+.fast a,
+.normal a,
+.slow a {
+  background-color: rgba(255, 255, 255, 0.75);
+  display: block;
+  width: 400px;
+  height: 120px;
+  font-size: 50px;
+  border-radius: 0px 0px 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}

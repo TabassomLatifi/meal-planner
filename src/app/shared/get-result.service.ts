@@ -6,9 +6,9 @@ export class getResultService {
   constructor(private http: HttpClient) {}
   private firstResponse: string = '';
   private breakfastSecondResponse: string = '';
-  private secondResponse: string ='';
-  private thirdResponse: string ='';
-  private fourthResponse: string ='';
+  private secondResponse: string = '';
+  private thirdResponse: string = '';
+  private fourthResponse: string = '';
 
   public setFirstResponse(value: string) {
     this.firstResponse = value;
@@ -28,19 +28,23 @@ export class getResultService {
 
   getResult() {
     if (this.firstResponse === 'breakfast/') {
-      return this.http
-        .get<string>(
-          'https://meal-planner-63a63-default-rtdb.firebaseio.com/' +
-            this.firstResponse + this.breakfastSecondResponse + this.thirdResponse + this.fourthResponse +
-            '.json'
-        )
+      return this.http.get<string>(
+        'https://meal-planner-63a63-default-rtdb.firebaseio.com/' +
+          this.firstResponse +
+          this.breakfastSecondResponse +
+          this.thirdResponse +
+          this.fourthResponse + Math.floor(Math.random() * 5 + 1) + '/' +
+          '.json'
+      );
     } else {
-      return this.http
-        .get<string>(
-          'https://meal-planner-63a63-default-rtdb.firebaseio.com/' +
-            this.firstResponse + this.secondResponse + this.thirdResponse + this.fourthResponse +
-            '.json'
-        )
+      return this.http.get<string>(
+        'https://meal-planner-63a63-default-rtdb.firebaseio.com/' +
+          this.firstResponse +
+          this.secondResponse +
+          this.thirdResponse +
+          this.fourthResponse + Math.floor(Math.random() * 5 + 1) + '/' +
+          '.json'
+      );
     }
   }
 }

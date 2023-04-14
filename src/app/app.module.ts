@@ -13,9 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FourthQuestionComponent } from './fourth-question/fourth-question.component';
 import { BreakfastSecondQuestionComponent } from './breakfast-second-question/breakfast-second-question.component';
 import { getResultService } from './shared/get-result.service';
-
-
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -32,11 +30,10 @@ import { getResultService } from './shared/get-result.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressSpinnerModule,
   ],
-  providers: [
-    getResultService,
-  ],
-  bootstrap: [AppComponent]
+  providers: [getResultService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

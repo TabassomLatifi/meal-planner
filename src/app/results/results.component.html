@@ -1,4 +1,9 @@
 
 <div class="container">
     <h1>{{ result }}</h1>
+    <mat-spinner *ngIf="isLoading" diameter="50"></mat-spinner>
+    <div class="buttons">
+        <button *ngIf="!isLoading" (click)="reset()">برگرد از اول</button>
+        <button *ngIf="!isLoading" (click)="newOffer()">یه پیشنهاد دیگه</button>
+    </div>
 </div>
